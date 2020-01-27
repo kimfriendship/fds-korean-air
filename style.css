@@ -1,12 +1,16 @@
 @charset "utf-8";
 @import url("../exHTML5/css/normalize.css");
 
+html {
+  font-size: 10px;
+}
+
 body {
   position: relative;
-  font-size: 10px;
   line-height: 2.3em;
   font-family: "Open sans", "Malgun Gothic", "맑은 고딕", Dotum, Gulim, Verdana;
 }
+
 /* 숨김 콘텐츠 */
 .wj_a11y-hidden {
   width: 1px;
@@ -15,83 +19,175 @@ body {
   margin: -1px;
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+
 /* 헤더 메뉴*/
 header {
   height: 10vh;
 }
+
 header a {
   text-decoration: none;
 }
+
 header li {
   list-style-type: none;
 }
-header .wj_menu {
+
+header .wj_menu-top {
   display: flex;
   justify-content: space-between;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #fff;
   font-weight: 700;
   height: 35px;
   background-color: #434343;
 }
-header li, header span {
+
+header li,
+header span {
   padding: 0 4px;
 }
-header .wj_menu a {
+
+header .wj_menu-top a {
   color: #fff;
   cursor: pointer;
 }
-.wj_menu-lang, .wj_menu-member {
+
+.wj_menu-top a:hover {
+  outline: white solid thin;
+}
+
+.wj_menu-lang,
+.wj_menu-member {
   display: flex;
   padding: 7px 15px;
   margin: 0;
 }
+
 .wj_menu-member {
   display: flex;
   letter-spacing: 2px;
   margin: 0 190px 0 0;
 }
+
 header input {
   position: absolute;
   width: 170px;
-  height: 18px;
-  top: 6px;
+  height: 20px;
+  top: 5px;
   right: 15px;
 }
 
 /* 헤더 메인메뉴 */
+h1 {
+  margin: 0;
+}
+
 .wj_logo a {
   position: absolute;
   top: 50px;
   left: 30px;
 }
-.wj_menu-main {
-  font-size: 1.8em;
+
+.wj_menu-bottom {
   margin-left: 1000px;
-  border: none;
-  background-color: #fff;
-  cursor: pointer;
-  color: black;
+  margin-top: 15px;
 }
+
+.wj_menu-bottom a:hover {
+  outline: black solid thin;
+}
+
+.wj_menu-main {
+  display: inline-block;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
 .wj_menu-main a {
   color: black;
+  display: block;
+  padding: 5px 5px 5px 35px;
 }
-h1 {
-  margin: 0;
+
+.wj_menu-flight {
+  background-image: url(./images/nav-icon1.png);
+  background-repeat: no-repeat;
 }
+
+.wj_menu-skypass {
+  background-image: url(./images/nav-icon2.png);
+  background-repeat: no-repeat;
+}
+
+.wj_menu-service {
+  background-image: url(./images/nav-icon3.png);
+  background-repeat: no-repeat;
+}
+
+.wj_menu-promotion {
+  background-image: url(./images/nav-icon4.png);
+  background-repeat: no-repeat;
+}
+
+.wj_submenu {
+  font-size: 1.4rem;
+  background-color: #fff;
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  top: 90px;
+  right: 5px;
+  border: 1px solid lightgray;
+  padding: 0 5px 0 10px;
+}
+
+.wj_submenu a {
+  padding: 5px;
+}
+
+.wj_submenu a:hover {
+  text-decoration: black underline;
+}
+
+.wj_menu-main:nth-child(n+2) {
+  display: none;
+}
+
+.wj_subitem {
+  display: block;
+  padding: 15px;
+}
+
+.wj_subitem span {
+  color: #186686;
+  font-weight: 700;
+}
+
+.wj_menu-close {
+  border: none;
+  background-color: #fff;
+  height: 50px;
+  width: 30px;
+}
+
 /* 사이드바 */
 .wj_sidebar {
   top: 10vh;
   position: fixed;
 }
+
 .wj_sidebar .wj_sb-icon {
   width: 60px;
   height: 60px;
   background-color: orangered;
   margin: 1px;
 }
+
 /* 콘텐츠 */
-h2, h3 {
+h2,
+h3 {
   top: 0;
   color: white;
   font-size: 5.4em;
@@ -100,11 +196,14 @@ h2, h3 {
   padding: 60px 0 0 160px;
   letter-spacing: -0.5px;
 }
+
 h3 {
   position: sticky;
   padding-top: 120px;
 }
+
 main {}
+
 .wj_content {
   width: 65vw;
   height: 10vh;
@@ -114,63 +213,72 @@ main {}
   opacity: .97;
   padding: 50px;
 }
+
 .wj_section {
   border-bottom: 5px solid #0f2b36;
 }
+
 .wj_s-skypass {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                  url('./images/skypass-bg1.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg1.jpg');
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 89vh;
 }
+
 .wj_s-member {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                    url('./images/skypass-bg2.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg2.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 .wj_s-skyteam {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                    url('./images/skypass-bg3.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg3.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 .wj_s-mileage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                    url('./images/skypass-bg4.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg4.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 .wj_s-discount {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                    url('./images/skypass-bg5.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg5.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 .wj_s-cmbs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-                  rgba(255, 255, 255, 0)),
-                    url('./images/skypass-bg6.jpg');
+      rgba(255, 255, 255, 0)),
+    url('./images/skypass-bg6.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 /* 폰트 스타일 */
 .wj_style-it-blue {
   font-style: italic;
   color: #186686;
 }
+
 /* 푸터 */
 footer {
   background-color: darkslateblue;

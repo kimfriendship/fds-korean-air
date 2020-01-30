@@ -204,25 +204,6 @@ h3 {
   padding-top: 120px;
 }
 
-h4 {
-  font-size: 4rem;
-  font-weight: 300;
-}
-
-h5 {
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.wj_content {
-  width: 65vw;
-  margin: 100px auto;
-  font-size: 1.8em;
-  background-color: #fff;
-  opacity: 0.97;
-  padding: 50px;
-}
-
 .wj_btn-link {
   border: 1px solid #186686;
   text-decoration: none;
@@ -257,11 +238,17 @@ h5 {
   color: white;
 }
 
+.wj_s-member .wj_content:nth-of-type(4) .wj_content-star {
+  margin-bottom: 120px;
+}
 
+.wj_s-member .wj_content:nth-of-type(5) .wj_content-star {
+  margin-bottom: 140px;
+}
 
-
-
-
+.wj_s-member .wj_content:nth-of-type(6) .wj_content-list li:nth-child(4) {
+  margin-bottom: 110px;
+}
 
 .wj_s-skyteam {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
@@ -304,30 +291,82 @@ h5 {
   font-style: italic;
   color: #186686;
   font-size: 1.8rem;
+  letter-spacing: 0;
+}
+
+.wj_content {
+  width: 60vw;
+  margin: 100px auto;
+  font-size: 1.6em;
+  letter-spacing: -.5px;
+  background-color: #fff;
+  opacity: 0.97;
+  padding: 70px;
+  position: relative;
+  column-width: 200px;
+  column-count: 2;
+  text-align: justify;
+  column-gap: 80px;
+}
+
+.wj_section .wj_with-title {
+  padding-top: 150px;
+}
+
+.wj_section .wj_without-column {
+  column-count: 1;
 }
 
 h4 {
+  height: 50px;
+  width: 60vw;
+  margin: 0;
   font-size: 4rem;
   font-weight: 300;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.97;
+  position: absolute;
+  top: 70px;
 }
 
 h5 {
   font-size: 2rem;
-  color: #186686;
+  color: hsl(197, 70%, 31%);
   font-weight: 400;
+  margin: 10px 0;
 }
 
-.wj_content-star {
-  font-size: 1.4rem;
-}
-
-.wj_content span,
-.wj_content li {
+h6 {
   font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+
+.wj_content-list {
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+
+.wj_content .wj_content-star {
+  font-size: 1.4rem;
+  padding: 20px 0;
+  display: block;
+  letter-spacing: -1px;
 }
 
 .wj_content-link {
   color: #186686;
+  font-size: 1.6rem;
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.wj_content img {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
 }
 
 .wj_btn-link {

@@ -238,18 +238,6 @@ h3 {
   color: white;
 }
 
-.wj_s-member .wj_content:nth-of-type(4) .wj_content-star {
-  margin-bottom: 50px;
-}
-
-.wj_s-member .wj_content:nth-of-type(5) .wj_content-star {
-  margin-bottom: 60px;
-}
-
-.wj_s-member .wj_content:nth-of-type(6) .wj_content-list li:nth-child(4) {
-  margin-bottom: 90px;
-}
-
 .wj_s-skyteam {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
@@ -257,6 +245,43 @@ h3 {
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+}
+
+.wj_table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.wj_table tr th,
+.wj_table tr td {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.wj_tr {
+  background: #186686;
+  color: white;
+}
+
+.wj_tr th:nth-child(1) {
+  width: 40%;
+}
+
+.wj_tr th:nth-child(2) {
+  width: 10%;
+}
+
+.wj_tr th:nth-child(3) {
+  width: 10%;
+}
+
+
+.wj_tr th:nth-child(4) {
+  width: 40%;
+}
+
+.wj_table-x {
+  background-image: url('./images/');
 }
 
 .wj_s-mileage {
@@ -299,8 +324,8 @@ h3 {
 .wj_content {
   width: 65vw;
   margin: 100px auto;
-  font-size: 1.6em;
-  letter-spacing: -.5px;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
   background-color: #fff;
   opacity: 0.97;
   padding: 70px 70px 70px 50px;
@@ -309,6 +334,7 @@ h3 {
   column-count: 2;
   text-align: justify;
   column-gap: 80px;
+  min-height: 10vh;
 }
 
 .wj_section .wj_with-title {

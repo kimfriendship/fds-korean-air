@@ -178,32 +178,41 @@ h1 {
 .wj_sidebar {
   top: 10vh;
   position: fixed;
+  background: #434343;
 }
 
 .wj_sidebar .wj_sb-icon {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   margin: 1px;
-  background: gray;
+  text-indent: -9999px;
+  padding: 7px;
+  border-top: 1px solid #aaa;
 }
 
 .wj_sb-icon:nth-child(1) {
-  background: red;
+  background: #aaa url("./images/plus-sidebar.png") no-repeat;
+  background-position: center;
 }
 .wj_sb-icon:nth-child(2) {
-  background: red;
+  background: url("./images/transportation-sidebar.png") no-repeat;
+  background-size: contain;
 }
 .wj_sb-icon:nth-child(3) {
-  background: red;
+  background: url("./images/vx-sidebar.png") no-repeat;
+  background-size: contain;
 }
 .wj_sb-icon:nth-child(4) {
-  background: red;
+  background: url("./images/family-sidebar.png") no-repeat;
+  background-size: contain;
 }
 .wj_sb-icon:nth-child(5) {
-  background: red;
+  background: url("./images/skypass-sidebar.png") no-repeat;
+  background-size: contain;
 }
 .wj_sb-icon:nth-child(6) {
-  background: red;
+  background: url("./images/files-sidebar.png") no-repeat;
+  background-size: contain;
 }
 /* 콘텐츠 */
 h2,

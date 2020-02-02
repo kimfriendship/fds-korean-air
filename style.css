@@ -181,12 +181,30 @@ h1 {
 }
 
 .wj_sidebar .wj_sb-icon {
-  width: 60px;
-  height: 60px;
-  background-color: orangered;
+  width: 55px;
+  height: 55px;
   margin: 1px;
+  background: gray;
 }
 
+.wj_sb-icon:nth-child(1) {
+  background: red;
+}
+.wj_sb-icon:nth-child(2) {
+  background: red;
+}
+.wj_sb-icon:nth-child(3) {
+  background: red;
+}
+.wj_sb-icon:nth-child(4) {
+  background: red;
+}
+.wj_sb-icon:nth-child(5) {
+  background: red;
+}
+.wj_sb-icon:nth-child(6) {
+  background: red;
+}
 /* 콘텐츠 */
 h2,
 h3 {
@@ -215,8 +233,10 @@ h3 {
 }
 
 .wj_s-skypass {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)
+    ),
     url("./images/skypass-bg1.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -225,8 +245,10 @@ h3 {
 }
 
 .wj_s-member {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)
+    ),
     url("./images/skypass-bg2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -239,8 +261,10 @@ h3 {
 }
 
 .wj_s-skyteam {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)
+    ),
     url("./images/skypass-bg3.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -265,7 +289,6 @@ h3 {
   color: white;
 }
 
-
 .wj_tr th:nth-child(1) {
   width: 40%;
 }
@@ -288,23 +311,22 @@ h3 {
 }
 
 .wj_table-x {
-  background: url('./images/TableIcons_X.png') no-repeat;
+  background: url("./images/TableIcons_X.png") no-repeat;
   background-position: center;
 }
 
 .wj_table-v {
-  background: url('./images/TableIcons_Checkx.png') no-repeat;
+  background: url("./images/TableIcons_Checkv.png") no-repeat;
   background-position: center;
 }
 
 .wj_table-vstar {
-  background: url('./images/TableIcons_Checkx\ \(1\).png') no-repeat;
+  background: url("./images/TableIcons_Checkx.png") no-repeat;
   background-position: center;
 }
 
 .wj_s-mileage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(187, 36, 36, 0)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(187, 36, 36, 0)),
     url("./images/skypass-bg4.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -312,8 +334,10 @@ h3 {
 }
 
 .wj_s-discount {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)
+    ),
     url("./images/skypass-bg5.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -321,7 +345,7 @@ h3 {
 }
 
 .wj_s-discount .wj_content {
-  height: 45vh;
+  height: 50vh;
   column-fill: auto;
 }
 
@@ -342,8 +366,10 @@ h3 {
 } */
 
 .wj_s-cmbs {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)
+    ),
     url("./images/skypass-bg6.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -358,6 +384,15 @@ h3 {
   letter-spacing: 0;
   padding: 10px 0;
   display: block;
+}
+
+.wj_f-blue {
+  font-size: 2.3rem;
+  color: #186686;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  line-height: 1.7;
 }
 
 .wj_content {
@@ -401,7 +436,7 @@ h5 {
   font-size: 2rem;
   color: hsl(197, 70%, 31%);
   font-weight: 400;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 h6 {

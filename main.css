@@ -13,7 +13,7 @@ html {
 .wj_main-book div,
 .wj_main-event,
 .wj_main-special {
-  width: 65vw;
+  width: 68vw;
   margin: 0 auto;
 }
 
@@ -42,6 +42,11 @@ html {
 }
 
 /* 이벤트 */
+.wj_main-event,
+.wj_main-special {
+  margin-bottom: 50px;
+  position: relative;
+}
 
 .wj_main-event h2,
 .wj_main-special h2 {
@@ -49,4 +54,167 @@ html {
   font-weight: 500;
 }
 
+.wj_event-list,
+.wj_special-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wj_event-list a,
+.wj_special-list a {
+  text-decoration: none;
+  display: block;
+  height: 290px;
+  width: 230px;
+}
+
+.wj_event-list li {
+  width: 230px;
+  height: 290px;
+}
+
+.wj_event-title,
+.wj_event-detail,
+.wj_special-title,
+.wj_special-detail {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wj_event-title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 230px 0 0 10px;
+}
+
+.wj_event-detail {
+  color: #7ed0e0;
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 5px 0 0 10px;
+}
+
+.wj_event-title,
+.wj_event-detail {}
+
+.wj_event-list li:nth-child(1) a {
+  background-color: #434343;
+  background-image: url('./images/event1.png');
+  background-repeat: no-repeat;
+}
+
+.wj_event-list li:nth-child(2) a {
+  background-color: #434343;
+  background-image: url('./images/event2.png');
+  background-repeat: no-repeat;
+}
+
+.wj_event-list li:nth-child(3) a {
+  background-color: #434343;
+  background-image: url('./images/event3.png');
+  background-repeat: no-repeat;
+}
+
+.wj_event-list li:nth-child(4) a {
+  background-color: #434343;
+  background-image: url('./images/event4.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_event-list li:nth-child(5) a {
+  background-color: #434343;
+  background-image: url('./images/event5.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_event-all,
+.wj_special-all {
+  color: #186686;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: url('./images/iconmore.png') no-repeat;
+  padding-right: 10px;
+  background-position: right center;
+  position: absolute;
+}
+
+.wj_event-all {
+  top: 5px;
+  left: 180px;
+}
+
+.wj_event-all:hover {
+  outline: 1px solid black;
+}
+
+
 /* 특가 항공권 */
+
+.wj_special-list li {
+  width: 230px;
+  height: 230px;
+}
+
+
+.wj_special-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.wj_special-detail {
+  color: #7ed0e0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.wj_special-list li:nth-child(1) {
+  background-color: #434343;
+  background-image: url('./images/special1.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-list li:nth-child(2) {
+  background-color: #434343;
+  background-image: url('./images/special2.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-list li:nth-child(3) {
+  background-color: #434343;
+  background-image: url('./images/special3.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-list li:nth-child(4) {
+  background-color: #434343;
+  background-image: url('./images/special4.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-list li:nth-child(5) {
+  background-color: #434343;
+  background-image: url('./images/special5.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-list li:nth-child(6) {
+  background-color: #434343;
+  background-image: url('./images/special6.jpg');
+  background-repeat: no-repeat;
+}
+
+.wj_special-all {
+  top: 5px;
+  left: 150px;
+}
+
+.wj_special-all:hover {
+  outline: 1px solid black;
+}

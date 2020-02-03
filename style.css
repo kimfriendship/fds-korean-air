@@ -20,6 +20,12 @@ body {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+.wj_clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* 헤더 메뉴*/
 header {
   height: 10vh;
@@ -95,7 +101,7 @@ h1 {
   position: relative;
 }
 
-.wj_menu-bottom a:hover {
+.wj_menu-bottom li:hover {
   outline: black solid thin;
 }
 
@@ -116,22 +122,42 @@ h1 {
 }
 
 .wj_menu-flight {
-  background-image: url(./images/nav-icon1.png);
+  background-image: url('./images/nav-icon1.png');
+  background-repeat: no-repeat;
+}
+
+.wj_menu-flight:hover {
+  background-image: url('./images/hover-1.png');
   background-repeat: no-repeat;
 }
 
 .wj_menu-skypass {
-  background-image: url(./images/nav-icon2.png);
+  background-image: url('./images/nav-icon2.png');
+  background-repeat: no-repeat;
+}
+
+.wj_menu-skypass:hover {
+  background-image: url('./images/hover-2.png');
   background-repeat: no-repeat;
 }
 
 .wj_menu-service {
-  background-image: url(./images/nav-icon3.png);
+  background-image: url('./images/nav-icon3.png');
+  background-repeat: no-repeat;
+}
+
+.wj_menu-service:hover {
+  background-image: url('./images/hover-3.png');
   background-repeat: no-repeat;
 }
 
 .wj_menu-promotion {
-  background-image: url(./images/nav-icon4.png);
+  background-image: url('./images/nav-icon4.png');
+  background-repeat: no-repeat;
+}
+
+.wj_menu-promotion:hover {
+  background-image: url('./images/hover-4.png');
   background-repeat: no-repeat;
 }
 
@@ -178,42 +204,38 @@ h1 {
 .wj_sidebar {
   top: 10vh;
   position: fixed;
-  background: #434343;
 }
 
 .wj_sidebar .wj_sb-icon {
-  width: 40px;
-  height: 40px;
+  display: block;
+  width: 50px;
+  height: 50px;
   margin: 1px;
-  text-indent: -9999px;
-  padding: 7px;
+  padding: 3px;
+  border: none;
   border-top: 1px solid #aaa;
+  cursor: pointer;
+  background: #434343;
+}
+
+.wj_sb-icon img {
+  width: 100%;
 }
 
 .wj_sb-icon:nth-child(1) {
-  background: #aaa url("./images/plus-sidebar.png") no-repeat;
-  background-position: center;
+  background: #fff;
 }
-.wj_sb-icon:nth-child(2) {
-  background: url("./images/transportation-sidebar.png") no-repeat;
-  background-size: contain;
+
+.wj_sb-icon:nth-child(1) img {
+  width: 60%;
+
 }
-.wj_sb-icon:nth-child(3) {
-  background: url("./images/vx-sidebar.png") no-repeat;
-  background-size: contain;
+
+.wj_sb-icon:hover,
+.wj_sb-icon:focus {
+  background: #186686;
 }
-.wj_sb-icon:nth-child(4) {
-  background: url("./images/family-sidebar.png") no-repeat;
-  background-size: contain;
-}
-.wj_sb-icon:nth-child(5) {
-  background: url("./images/skypass-sidebar.png") no-repeat;
-  background-size: contain;
-}
-.wj_sb-icon:nth-child(6) {
-  background: url("./images/files-sidebar.png") no-repeat;
-  background-size: contain;
-}
+
 /* 콘텐츠 */
 h2,
 h3 {
@@ -242,10 +264,8 @@ h3 {
 }
 
 .wj_s-skypass {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705) 25%,
+      rgba(255, 255, 255, 0) 50%),
     url("./images/skypass-bg1.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -254,10 +274,8 @@ h3 {
 }
 
 .wj_s-member {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)),
     url("./images/skypass-bg2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -270,10 +288,8 @@ h3 {
 }
 
 .wj_s-skyteam {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)),
     url("./images/skypass-bg3.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -343,19 +359,12 @@ h3 {
 }
 
 .wj_s-discount {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)),
     url("./images/skypass-bg5.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
-}
-
-.wj_s-discount .wj_content {
-  height: 50vh;
-  column-fill: auto;
 }
 
 .wj_s-discount ul {
@@ -369,16 +378,9 @@ h3 {
   margin: 0;
 }
 
-/* 
-.wj_s-discount h6:nth-of-type(3) {
-  margin-top: 50px;
-} */
-
 .wj_s-cmbs {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.705),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705),
+      rgba(255, 255, 255, 0)),
     url("./images/skypass-bg6.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -395,7 +397,7 @@ h3 {
   display: block;
 }
 
-.wj_f-blue {
+.wj_content .wj_f-blue {
   font-size: 2.3rem;
   color: #186686;
   font-weight: 300;
@@ -411,21 +413,24 @@ h3 {
   letter-spacing: -0.5px;
   background-color: #fff;
   opacity: 0.97;
-  padding: 70px 70px 70px 50px;
-  position: relative;
-  column-width: 200px;
-  column-count: 2;
-  text-align: justify;
-  column-gap: 80px;
-  min-height: 10vh;
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wj_content-left,
+.wj_content-right {
+  width: 30vw;
 }
 
 .wj_section .wj_with-title {
-  padding-top: 150px;
+  padding-top: 140px;
+  position: relative;
 }
 
-.wj_section .wj_without-column {
-  column-count: 1;
+section:nth-of-type(3) .wj_content,
+section:nth-of-type(6) article:nth-of-type(1) {
+  display: block;
 }
 
 h4 {
@@ -436,9 +441,8 @@ h4 {
   font-weight: 300;
   text-align: center;
   background-color: #fff;
-  opacity: 0.97;
   position: absolute;
-  top: 60px;
+  top: 70px;
 }
 
 h5 {
@@ -471,11 +475,17 @@ h6 {
   font-size: 1.6rem;
   display: inline-block;
   padding: 5px;
-  margin: 5px 0;
+  margin: 5px 150px 5px 0;
+}
+
+.wj_link-pdf {
+  background: url('./images/icon_pdf.png') no-repeat;
+  background-position: right;
+  padding-right: 20px;
 }
 
 .wj_content img {
-  width: 85%;
+  width: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -493,8 +503,67 @@ h6 {
   font-size: 1.6rem;
 }
 
+.wj_content .wj_content-list ul li {
+  list-style-type: "-";
+}
+
+.wj_content .wj_content-list ul li ul li {
+  list-style-type: circle;
+}
+
+.wj_content-list .wj_content-star {
+  padding: 3px 0;
+}
+
 /* 푸터 */
 footer {
-  background-color: darkslateblue;
-  height: 300px;
+  background: #314563;
+  padding: 50px 400px;
+  position: relative;
+}
+
+.wj_footer-menu {
+  padding: 0;
+}
+
+.wj_footer-menu ul {
+  float: left;
+  padding: 0 40px 0 0;
+  margin: 0;
+  color: white;
+  list-style: none;
+}
+
+.wj_footer-menu ul li {
+  border-left: 1px solid white;
+}
+
+.wj_footer-menu ul li:nth-child(1) {
+  font-size: 1.4rem;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.wj_footer-menu a {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+.wj_address span,
+.wj_copyright {
+  font-style: normal;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.wj_sns {
+  position: absolute;
+  bottom: 80px;
+  right: 500px;
+}
+
+.wj_sns a {
+  padding-right: 5px;
 }

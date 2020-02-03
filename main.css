@@ -10,7 +10,9 @@ html {
   background-position: center top;
 }
 
-.wj_main-book div {
+.wj_main-book div,
+.wj_main-event,
+.wj_main-special {
   width: 65vw;
   margin: 0 auto;
 }
@@ -18,6 +20,7 @@ html {
 .wj_main-book h2 {
   font-size: 4.8rem;
   font-weight: 350;
+  padding: 50px 0 0 0;
   margin: 0;
 }
 
@@ -43,6 +46,7 @@ html {
 .wj_main-event h2,
 .wj_main-special h2 {
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 /* 특가 항공권 */

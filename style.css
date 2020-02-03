@@ -39,9 +39,9 @@ header li {
   list-style-type: none;
 }
 
-header .wj_menu-top {
+.wj_menu-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 1.1rem;
   color: #fff;
   font-weight: 700;
@@ -70,18 +70,36 @@ header .wj_menu-top a {
   margin: 0;
 }
 
+.wj_menu-lang {
+  margin-right: auto;
+}
+
 .wj_menu-member {
-  display: flex;
   letter-spacing: 2px;
-  margin: 0 190px 0 0;
+  margin: 0 5px 0 0;
 }
 
 header input {
-  position: absolute;
   width: 170px;
   height: 20px;
-  top: 5px;
-  right: 15px;
+  transition: 1s;
+  margin: 5px 10px 5px 0;
+}
+
+header input:focus {
+  width: 200px;
+}
+
+header button {
+  background: url('./images/search-icon.png') no-repeat;
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  text-indent: -9999px;
+  border: none;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 
 /* 헤더 메인메뉴 */

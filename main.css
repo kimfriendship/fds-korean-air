@@ -1,0 +1,48 @@
+html {
+  margin: 0;
+  font-size: 10px;
+}
+
+/* 부킹 */
+.wj_main-book {
+  height: 70vh;
+  background: url('./images/main-bg.jpg') no-repeat;
+  background-position: center top;
+}
+
+.wj_main-book div {
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.wj_main-book h2 {
+  font-size: 4.8rem;
+  font-weight: 350;
+  margin: 0;
+}
+
+.wj_main-book h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 10px 0 30px 0;
+  padding: 0;
+}
+
+.wj_main-book a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 12px 40px;
+}
+
+/* 이벤트 */
+
+.wj_main-event h2,
+.wj_main-special h2 {
+  font-size: 2.5rem;
+}
+
+/* 특가 항공권 */

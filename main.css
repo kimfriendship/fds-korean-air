@@ -1,6 +1,15 @@
 html {
   margin: 0;
   font-size: 10px;
+  box-shadow: border-box;
+}
+
+legend,
+.a11y-hidden {
+  width: 1px;
+  height: 1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  position: absolute;
 }
 
 /* 부킹 */
@@ -39,6 +48,116 @@ html {
   border: 1px solid black;
   border-radius: 3px;
   padding: 12px 40px;
+}
+
+
+/* 메인 북 폼 */
+
+.wj_book fieldset {
+  background: #0180a3;
+  width: 60vw;
+  border: none;
+  border-radius: 3px;
+  padding: 0;
+  margin: 150px auto 0 auto;
+  position: relative;
+}
+
+.wj_book-btn {
+  display: block;
+  width: 120px;
+  height: 80px;
+  background: #186686;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px 0 0 3px;
+}
+
+.wj_book .wj_book-car {
+  width: 950px;
+  position: absolute;
+  left: 120px;
+  top: 0;
+}
+
+.wj_car-area-btn {
+  border: none;
+  background: #84c9cd;
+  display: inline-block;
+  margin: 0;
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
+}
+
+.wj_car-area-btn:nth-child(1) {
+  margin-left: 30px;
+}
+
+.wj_book .wj_car-world {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 850px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wj_car-world ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wj_car-world input {
+  display: block;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+
+.wj_wcar-where input {
+  width: 320px;
+  margin-right: 30px;
+}
+
+.wj_car-world .wj_wcar-skypass {
+  width: 130px;
+  height: 50px;
+  margin-top: 12px;
+}
+
+.wj_wcar-skypass select {
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.wj_wcar-where,
+.wj_wcar-when {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wj_dropoff-check {
+  position: absolute;
+  top: 13px;
+  right: 180px;
+  display: flex;
+}
+
+.wj_car-world .wj_dropoff-check input {
+  width: 20px;
+  margin: 0;
+}
+
+.wj_car-world button[type="submit"] {
+  width: 120px;
+  height: 30px;
+  background: #a0e2f4;
 }
 
 /* 이벤트 */
@@ -167,6 +286,10 @@ html {
 .wj_special-list li {
   background-repeat: no-repeat;
   width: 229px;
+}
+
+.wj_special-list li:hover {
+  outline: 1px solid black;
 }
 
 .wj_special-list a {

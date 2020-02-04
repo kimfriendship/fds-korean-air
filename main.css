@@ -110,17 +110,19 @@ legend,
 .wj_car-world ul {
   list-style-type: none;
   padding: 0;
+  width: 680px;
 }
 
 .wj_car-world input {
   display: block;
-  line-height: 1.8;
+  height: 25px;
   margin-top: 5px;
 }
 
 .wj_wcar-where input {
   width: 320px;
-  margin-right: 30px;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .wj_car-world .wj_wcar-skypass {
@@ -130,8 +132,15 @@ legend,
 }
 
 .wj_wcar-skypass select {
-  display: block;
+  display: inline-block;
   width: 120px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.wj_wcar-when select {
+  display: inline;
+  width: 70px;
   height: 30px;
   margin-top: 5px;
 }
@@ -144,20 +153,39 @@ legend,
 
 .wj_dropoff-check {
   position: absolute;
-  top: 13px;
-  right: 180px;
+  top: 12px;
+  right: 170px;
   display: flex;
 }
 
 .wj_car-world .wj_dropoff-check input {
-  width: 20px;
+  width: 13px;
+  height: 13px;
   margin: 0;
+}
+
+.wj_wcar-when li {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 323px;
+}
+
+
+.wj_wcar-when span {
+  display: block;
+  width: 200px;
 }
 
 .wj_car-world button[type="submit"] {
   width: 120px;
   height: 30px;
   background: #a0e2f4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 #186686;
+  margin: 30px 0 0 20px;
 }
 
 /* 이벤트 */

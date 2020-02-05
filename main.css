@@ -64,7 +64,7 @@ legend,
 
 .wj_book fieldset {
   background: #0180a3;
-  width: 60vw;
+  width: 61vw;
   border: none;
   border-radius: 3px;
   padding: 0;
@@ -74,34 +74,59 @@ legend,
 
 .wj_book-btn {
   display: block;
-  width: 120px;
+  width: 100px;
   height: 80px;
-  background: #186686;
+  background: #155872;
   border: none;
   cursor: pointer;
   color: white;
   border-radius: 3px 0 0 3px;
+  border: 0.5px solid #0180a3;
+  padding-top: 30px;
+}
+
+.wj_book-flight {
+  background-image: url('./images/booking-icon.png');
+  background-position: 18% -4%;
+}
+
+.wj_book-hotel {
+  background-image: url('./images/booking-icon.png');
+  background-position: 18% 36%;
+}
+
+.wj_book-rent {
+  background-image: url('./images/booking-icon.png');
+  background-position: 18% 72%;
 }
 
 .wj_book .wj_book-car {
   width: 950px;
   position: absolute;
   left: 120px;
-  top: 0;
+  top: 10px;
 }
 
 .wj_car-area-btn {
   border: none;
-  background: #84c9cd;
+  background: #27748b;
   display: inline-block;
-  margin: 0;
+  margin: 20px 0 0 0;
   width: 100px;
   height: 25px;
-  margin-top: 20px;
+  color: white;
 }
 
 .wj_car-area-btn:nth-child(1) {
   margin-left: 30px;
+  border-radius: 10px 0 0 10px;
+  color: #215264;
+  background: #7ed0e0;
+  font-weight: 600;
+}
+
+.wj_car-area-btn:nth-child(2) {
+  border-radius: 0 10px 10px 0;
 }
 
 .wj_book .wj_car-world {
@@ -110,7 +135,7 @@ legend,
   font-weight: 400;
   width: 850px;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -231,11 +256,6 @@ legend,
   width: 230px;
 }
 
-.wj_event-list li {
-  width: 230px;
-  height: 290px;
-}
-
 .wj_event-title,
 .wj_event-detail,
 .wj_special-title,
@@ -248,14 +268,14 @@ legend,
 
 .wj_event-title {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 230px 0 0 10px;
 }
 
 .wj_event-detail {
   color: #7ed0e0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 800;
   padding: 5px 0 0 10px;
 }
@@ -268,6 +288,7 @@ legend,
   background-color: #434343;
   background-image: url('./images/event1.png');
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .wj_event-list li:nth-child(2) a {

@@ -488,7 +488,8 @@
                   <input id="pickup-city" name="pickup" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력">
                 </li>
                 <li class="wj_dropoff-check">
-                  <input type="checkbox">
+                  <label for="dropoff-check" class="wj_a11y-hidden">차량 반납 위치 변경 여부</label>
+                  <input id="dropoff-check" name="dropoff" type="checkbox">
                   <span>차량을 다른 영업소로 반환합니다</span>
                 </li>
                 <li>
@@ -496,8 +497,8 @@
                   <input id="dropoff-city" name="dropoff" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력" disabled>
                 </li>
               </ul>
-              <div class="wj_wcar-skypass">
-                <label for="memeber">스카이패스 회원 등급</label>
+              <div class="wj_wcar-member">
+                <label for="member">스카이패스 회원 등급</label>
                 <select name="member" id="member">
                   <option value>선택</option>
                   <option value="123" selected>SKYPASS</option>
@@ -509,7 +510,7 @@
               <ul class="wj_wcar-when">
                 <li>
                   <label for="pickup-day">대여일</label>
-                  <input type="datetime" name="pickup" id="pickup-day" title="대여일 (예시: 2018-01-01)">
+                  <input type="text" name="pickup" id="pickup-day" title="대여일 (예시: 2018-01-01)">
                   <select name="pickup" id="pickup-hour" title="대여 시간 선택">
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -546,7 +547,7 @@
                 </li>
                 <li>
                   <label>반납일</label>
-                  <input type="datetime" title="반납일 (예시: 2018-01-01)">
+                  <input type="text" title="반납일 (예시: 2018-01-01)">
                   <select name="dropoff" id="dropoff-hour" title="반납 시간 선택">
                     <option value="01">01</option>
                     <option value="02">02</option>

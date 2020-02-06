@@ -140,6 +140,10 @@
   width: 320px;
 }
 
+.wj_wcar-when input {
+  width: 150px;
+}
+
 .wj_car-world .wj_wcar-member {
   width: 130px;
   height: 50px;
@@ -157,7 +161,7 @@
 }
 
 .wj_wcar-when select {
-  width: 70px;
+  width: 80px;
 }
 
 .wj_wcar-where,
@@ -188,7 +192,7 @@
 }
 
 
-.wj_wcar-when span {
+.wj_wcar-when label {
   display: block;
   width: 200px;
 }

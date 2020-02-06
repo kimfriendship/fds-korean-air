@@ -1,26 +1,3 @@
-html {
-  margin: 0;
-  font-size: 10px;
-}
-
-body * {
-  box-sizing: border-box;
-}
-
-legend,
-.a11y-hidden {
-  width: 1px;
-  height: 1px;
-  clip-path: polygon(0 0, 0 0, 0 0);
-  position: absolute;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /* 부킹 */
 .wj_main-book {
   height: 70vh;

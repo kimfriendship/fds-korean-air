@@ -224,12 +224,12 @@ h1 {
 /* 푸터 */
 footer {
   background: #314563;
-  padding: 50px 400px;
   position: relative;
+  height: 45vh;
 }
 
 .wj_footer-menu {
-  padding: 0;
+  padding: 50px 20% 30px;
 }
 
 .wj_footer-menu ul {
@@ -262,11 +262,12 @@ footer {
   font-style: normal;
   color: white;
   font-size: 1.1rem;
+  padding-left: 20%;
 }
 
 .wj_sns {
   position: absolute;
-  bottom: 80px;
+  top: 260px;
   right: 500px;
 }
 

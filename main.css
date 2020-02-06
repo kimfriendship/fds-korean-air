@@ -22,7 +22,7 @@
 .wj_main-book h3 {
   font-size: 1.9rem;
   font-weight: 500;
-  margin: 10px 0 30px 0;
+  margin: 30px 0 30px 0;
   padding: 0;
 }
 
@@ -45,14 +45,14 @@
   border: none;
   border-radius: 3px;
   padding: 0;
-  margin: 150px auto 0 auto;
+  margin: 110px auto 0 auto;
   position: relative;
 }
 
 .wj_book-btn {
   display: block;
   width: 100px;
-  height: 80px;
+  height: 90px;
   background: #155872;
   border: none;
   cursor: pointer;
@@ -64,17 +64,17 @@
 
 .wj_book-flight {
   background-image: url('./images/booking-icon.png');
-  background-position: 18% -4%;
+  background-position: 36px 12px;
 }
 
 .wj_book-hotel {
   background-image: url('./images/booking-icon.png');
-  background-position: 18% 36%;
+  background-position: 36px 200px;
 }
 
 .wj_book-rent {
   background-image: url('./images/booking-icon.png');
-  background-position: 18% 72%;
+  background-position: 36px 133px;
 }
 
 .wj_book .wj_book-car {
@@ -175,9 +175,9 @@
 }
 
 .wj_car-world .wj_dropoff-check input {
-  width: 13px;
-  height: 13px;
-  margin: 0;
+  width: 15px;
+  height: 15px;
+  margin: 4px 2px 0;
 }
 
 .wj_wcar-when li {
@@ -201,7 +201,7 @@
   border: none;
   border-radius: 5px;
   box-shadow: 3px 3px 0 0 #186686;
-  margin: 30px 0 0 20px;
+  margin: 40px 0 0 20px;
 }
 
 /* 이벤트 */
@@ -389,7 +389,7 @@
 
 .wj_special-notice {
   font-size: 1.2rem;
-  padding: 5px 0 50px 10px;
+  padding: 10px 0 50px 15px;
 }
 
 .wj_special-notice li {

@@ -21,7 +21,7 @@ legend {
   width: 1px;
   height: 1px;
   overflow: hidden;
-  margin: -1px;
+  position: absolute;
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
@@ -225,11 +225,11 @@ h1 {
 footer {
   background: #314563;
   position: relative;
-  height: 45vh;
+  padding-bottom: 50px;
 }
 
 .wj_footer-menu {
-  padding: 50px 20% 30px;
+  padding: 50px 0 30px 20%;
 }
 
 .wj_footer-menu ul {
@@ -247,7 +247,6 @@ footer {
 .wj_footer-menu ul li:nth-child(1) {
   font-size: 1.4rem;
   border: none;
-  padding-bottom: 5px;
 }
 
 .wj_footer-menu a {

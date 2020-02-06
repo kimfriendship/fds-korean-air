@@ -484,23 +484,23 @@
             <div class="wj_car-world">
               <ul class="wj_wcar-where">
                 <li>
-                  <label for="pickupcitty">대여 도시</label>
-                  <input id="pickupcity" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력">
+                  <label for="pickup-city">대여 도시</label>
+                  <input id="pickup-city" name="pickup" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력">
                 </li>
                 <li class="wj_dropoff-check">
                   <input type="checkbox">
                   <span>차량을 다른 영업소로 반환합니다</span>
                 </li>
                 <li>
-                  <label for="dropoffcity">반납 도시</label>
-                  <input id="dropoffcity" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력" disabled>
+                  <label for="dropoff-city">반납 도시</label>
+                  <input id="dropoff-city" name="dropoff" type="text" placeholder="도시 또는 공항 코드(3자리) 영문 입력" disabled>
                 </li>
               </ul>
               <div class="wj_wcar-skypass">
-                <span>스카이패스 회원 등급</span>
-                <select name="" id="">
+                <label for="memeber">스카이패스 회원 등급</label>
+                <select name="member" id="member">
                   <option value>선택</option>
-                  <option value="123">SKYPASS</option>
+                  <option value="123" selected>SKYPASS</option>
                   <option value="234">MORNING CALM</option>
                   <option value="345">MORNING CALM PREMIUM</option>
                   <option value="456">MILLION MILER</option>
@@ -508,9 +508,9 @@
               </div>
               <ul class="wj_wcar-when">
                 <li>
-                  <span>대여일</span>
-                  <input type="datetime">
-                  <select name="" id="pickuphour">
+                  <label for="pickup-day">대여일</label>
+                  <input type="datetime" name="pickup" id="pickup-day" title="대여일 (예시: 2018-01-01)">
+                  <select name="pickup" id="pickup-hour" title="대여 시간 선택">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -522,7 +522,7 @@
                     <option value="09">09</option>
                     <option value="10">10</option>
                     <option value="11">11</option>
-                    <option value="12">12</option>
+                    <option value="12" selected>12</option>
                     <option value="13">13</option>
                     <option value="14">14</option>
                     <option value="15">15</option>
@@ -535,8 +535,8 @@
                     <option value="22">22</option>
                     <option value="23">23</option>
                   </select>
-                  <select name="" id="pickupmin">
-                    <option value="00">00</option>
+                  <select name="pickup" id="pickup-min" title="대여 분 선택">
+                    <option value="00" selected>00</option>
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>
@@ -545,9 +545,9 @@
                   </select>
                 </li>
                 <li>
-                  <span>반납일</span>
-                  <input type="datetime">
-                  <select name="" id="">
+                  <label>반납일</label>
+                  <input type="datetime" title="반납일 (예시: 2018-01-01)">
+                  <select name="dropoff" id="dropoff-hour" title="반납 시간 선택">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -559,7 +559,7 @@
                     <option value="09">09</option>
                     <option value="10">10</option>
                     <option value="11">11</option>
-                    <option value="12">12</option>
+                    <option value="12" selected>12</option>
                     <option value="13">13</option>
                     <option value="14">14</option>
                     <option value="15">15</option>
@@ -572,8 +572,8 @@
                     <option value="22">22</option>
                     <option value="23">23</option>
                   </select>
-                  <select name="" id="">
-                    <option value="00">00</option>
+                  <select name="dropoff" id="dropoff-min" title="반납 분 선택">
+                    <option value="00" selected>00</option>
                     <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="30">30</option>

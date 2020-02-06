@@ -94,10 +94,9 @@ h3 {
   background-attachment: fixed;
 }
 
-.wj_table {
+.wj_content .wj_table {
   border-collapse: collapse;
   width: 100%;
-  height: 900px;
   margin: 20px 0;
 }
 
@@ -107,10 +106,15 @@ h3 {
   text-align: center;
 }
 
+.wj_table tr td {
+  height: 105px;
+}
+
 .wj_tr {
   background: #186686;
   color: white;
 }
+
 
 .wj_tr th:nth-child(1) {
   width: 40%;
@@ -266,7 +270,7 @@ h6 {
   font-size: 1.6rem;
   display: inline-block;
   padding: 5px;
-  margin: 5px 150px 5px 0;
+  margin: 5px 100px 5px 0;
 }
 
 .wj_link-pdf {

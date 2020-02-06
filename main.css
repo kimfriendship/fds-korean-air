@@ -1,3 +1,7 @@
+body {
+  min-width: 1200px;
+}
+
 /* 부킹 */
 .wj_main-book {
   height: 70vh;
@@ -60,6 +64,11 @@
   border-radius: 3px 0 0 3px;
   border: 0.5px solid #0180a3;
   padding-top: 30px;
+  font-size: 1.4rem;
+}
+
+.wj_book-btn:hover {
+  outline: 1px solid black;
 }
 
 .wj_book-flight {
@@ -73,8 +82,10 @@
 }
 
 .wj_book-rent {
+  background-color: #0180a3;
   background-image: url('./images/booking-icon.png');
   background-position: 36px 133px;
+  font-weight: 700;
 }
 
 .wj_book .wj_book-car {
@@ -228,6 +239,11 @@
   justify-content: space-between;
 }
 
+.wj_event-list a {
+  background-image: url('./images/caption-arrow.png');
+  background-repeat: no-repeat;
+}
+
 .wj_event-list a,
 .wj_special-list a {
   text-decoration: none;
@@ -321,6 +337,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 1250px;
 }
 
 .wj_special-list li {

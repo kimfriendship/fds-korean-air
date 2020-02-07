@@ -477,12 +477,19 @@
       <form class="book" action="#" method="POST">
         <fieldset>
           <legend>예약 폼</legend>
-          <button class="book-btn book-flight">항공권</button>
-          <button class="book-btn book-hotel">호텔</button>
-          <button class="book-btn book-rent">렌터카</button>
-          <div class="book-car">
-            <button class="car-area-btn">전세계</button><button class="car-area-btn">제주(한진)</button>
-            <div class="car-world">
+          <button class="book-btn book-flight" role="tab" id="tab-flight" aria-selected="true" tabindex="0"
+            aria-controls="tabpannel-flight">항공권</button>
+          <button class="book-btn book-hotel" role="tab" id="tab1-hotel" aria-selected="flase" tabindex="0"
+            aria-controls="tabpannel-hotel">호텔</button>
+          <button class="book-btn book-rent" role="tab" id="tab-rent" aria-selected="false" tabindex="0"
+            aria-controls="tabpannel-rent">렌터카</button>
+          <div class="book-car" role="tabpanel" id="tabpannel-rent" aria-labelledby="tab-rent">
+            <button class="car-area-btn" role="tab" id="tab-wcar" aria-selected="true" tabindex="0"
+              aria-controls="tabpannel-wcar">전세계
+            </button><button class="car-area-btn" role="tab" id="tab-jcar" aria-selected="false" tabindex="0"
+              aria-controls="tabpannel-jcar">
+              제주(한진)</button>
+            <div class="car-world" role="tabpanel" id="tabpannel-wcar" aria-labelledby="tab-rent">
               <ul class="wcar-where">
                 <li>
                   <label for="pickup-city">대여 도시</label>
@@ -547,8 +554,8 @@
                   </select>
                 </li>
                 <li>
-                  <label>반납일</label>
-                  <input type="text" title="반납일 (예시: 2018-01-01)">
+                  <label for="dropoff-day">반납일</label>
+                  <input type="text" id="dropoff-day" title="반납일 (예시: 2018-01-01)">
                   <select name="dropoff" id="dropoff-hour" title="반납 시간 선택">
                     <option value="01">01</option>
                     <option value="02">02</option>

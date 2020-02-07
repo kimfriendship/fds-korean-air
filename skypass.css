@@ -1,10 +1,10 @@
 /* 사이드바 */
-.wj_sidebar {
+.sidebar {
   top: 10vh;
   position: fixed;
 }
 
-.wj_sidebar .wj_sb-icon {
+.sidebar .sb-icon {
   display: block;
   width: 50px;
   height: 50px;
@@ -16,21 +16,21 @@
   background: #434343;
 }
 
-.wj_sb-icon img {
+.sb-icon img {
   width: 100%;
 }
 
-.wj_sb-icon:nth-child(1) {
+.sb-icon:nth-child(1) {
   background: #fff;
 }
 
-.wj_sb-icon:nth-child(1) img {
+.sb-icon:nth-child(1) img {
   width: 60%;
 
 }
 
-.wj_sb-icon:hover,
-.wj_sb-icon:focus {
+.sb-icon:hover,
+.sb-icon:focus {
   background: #186686;
 }
 
@@ -51,17 +51,17 @@ h3 {
   padding-top: 120px;
 }
 
-.wj_btn-link {
+.btn-link {
   border: 1px solid #186686;
   text-decoration: none;
   color: #186686;
 }
 
-.wj_section {
+.section {
   border-bottom: 5px solid #0f2b36;
 }
 
-.wj_s-skypass {
+.s-skypass {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705) 25%,
       rgba(255, 255, 255, 0) 50%),
     url("./images/skypass-bg1.jpg");
@@ -71,7 +71,7 @@ h3 {
   height: 89vh;
 }
 
-.wj_s-member {
+.s-member {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
     url("./images/skypass-bg2.jpg");
@@ -80,12 +80,12 @@ h3 {
   background-attachment: fixed;
 }
 
-.wj_btn-link:hover {
+.btn-link:hover {
   background-color: #186686;
   color: white;
 }
 
-.wj_s-skyteam {
+.s-skyteam {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
     url("./images/skypass-bg3.jpg");
@@ -94,65 +94,65 @@ h3 {
   background-attachment: fixed;
 }
 
-.wj_content .wj_table {
+.content .table {
   border-collapse: collapse;
   width: 100%;
   margin: 20px 0;
 }
 
-.wj_table tr th,
-.wj_table tr td {
+.table tr th,
+.table tr td {
   border: 1px solid gray;
   text-align: center;
 }
 
-.wj_table tr td {
+.table tr td {
   height: 105px;
 }
 
-.wj_tr {
+.tr {
   background: #186686;
   color: white;
 }
 
 
-.wj_tr th:nth-child(1) {
+.tr th:nth-child(1) {
   width: 40%;
 }
 
-.wj_tr th:nth-child(2) {
+.tr th:nth-child(2) {
   width: 10%;
 }
 
-.wj_tr th:nth-child(3) {
+.tr th:nth-child(3) {
   width: 10%;
   word-break: keep-all;
 }
 
-.wj_tr th:nth-child(4) {
+.tr th:nth-child(4) {
   width: 40%;
 }
 
-.wj_table tr td:nth-last-child(1) {
+.table tr td:nth-last-child(1) {
   text-align: left;
 }
 
-.wj_table-x {
+.table-x {
   background: url("./images/TableIcons_X.png") no-repeat;
   background-position: center;
 }
 
-.wj_table-v {
+.table-v {
   background: url("./images/TableIcons_Checkv.png") no-repeat;
   background-position: center;
 }
 
-.wj_table-vstar {
+.table-vstar {
   background: url("./images/TableIcons_Checkx.png") no-repeat;
   background-position: center;
 }
 
-.wj_s-mileage {
+.s-mileage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(187, 36, 36, 0)),
     url("./images/skypass-bg4.jpg");
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ h3 {
   background-attachment: fixed;
 }
 
-.wj_s-discount {
+.s-discount {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
     url("./images/skypass-bg5.jpg");
@@ -169,18 +169,18 @@ h3 {
   background-attachment: fixed;
 }
 
-.wj_s-discount ul {
+.s-discount ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.wj_s-discount .wj_content ul li .wj_content-link {
+.s-discount .content ul li .content-link {
   padding: 0;
   margin: 0;
 }
 
-.wj_s-cmbs {
+.s-cmbs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
     url("./images/skypass-bg6.jpg");
@@ -190,7 +190,7 @@ h3 {
 }
 
 /* 폰트 스타일 */
-.wj_content .wj_f-italic {
+.content .f-italic {
   font-style: italic;
   color: #186686;
   font-size: 1.8rem;
@@ -199,7 +199,7 @@ h3 {
   display: block;
 }
 
-.wj_content .wj_f-blue {
+.content .f-blue {
   font-size: 2.3rem;
   color: #186686;
   font-weight: 300;
@@ -208,7 +208,7 @@ h3 {
   line-height: 1.7;
 }
 
-.wj_content {
+.content {
   width: 65vw;
   margin: 100px auto;
   font-size: 1.6rem;
@@ -221,12 +221,12 @@ h3 {
   justify-content: space-between;
 }
 
-.wj_content-left,
-.wj_content-right {
+.content-left,
+.content-right {
   width: 47%;
 }
 
-section:nth-of-type(3) .wj_content,
+section:nth-of-type(3) .content,
 section:nth-of-type(6) article:nth-of-type(1) {
   display: block;
 }
@@ -253,19 +253,19 @@ h6 {
   margin: 20px 0 0 0;
 }
 
-.wj_content-list {
+.content-list {
   padding: 0 0 0 20px;
   margin: 5px 0;
 }
 
-.wj_content .wj_content-star {
+.content .content-star {
   font-size: 1.4rem;
   padding: 20px 0;
   display: block;
   letter-spacing: -1px;
 }
 
-.wj_content-link {
+.content-link {
   color: #186686;
   font-size: 1.6rem;
   display: inline-block;
@@ -273,19 +273,19 @@ h6 {
   margin: 5px 100px 5px 0;
 }
 
-.wj_link-pdf {
+.link-pdf {
   background: url('./images/icon_pdf.png') no-repeat;
   background-position: right;
   padding-right: 20px;
 }
 
-.wj_content img {
+.content img {
   width: 400px;
   display: block;
   margin: 0 auto;
 }
 
-.wj_btn-link {
+.btn-link {
   display: block;
   width: 80%;
   padding: 10px 15px;
@@ -293,19 +293,19 @@ h6 {
   margin: 10px;
 }
 
-.wj_content-link:hover {
+.content-link:hover {
   outline: 1px solid black;
   font-size: 1.6rem;
 }
 
-.wj_content .wj_content-list ul li {
+.content .content-list ul li {
   list-style-type: "-";
 }
 
-.wj_content .wj_content-list ul li ul li {
+.content .content-list ul li ul li {
   list-style-type: circle;
 }
 
-.wj_content-list .wj_content-star {
+.content-list .content-star {
   padding: 3px 0;
 }

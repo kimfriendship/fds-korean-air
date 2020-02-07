@@ -1,34 +1,34 @@
 body {}
 
 /* 부킹 */
-.wj_main-book {
+.main-book {
   height: 70vh;
   background: url('./images/main-bg.jpg') no-repeat;
   background-position: center top;
 }
 
-.wj_main-book div,
-.wj_main-event,
-.wj_main-special {
+.main-book div,
+.main-event,
+.main-special {
   width: 68vw;
   margin: 0 auto;
 }
 
-.wj_main-book h2 {
+.main-book h2 {
   font-size: 4.8rem;
   font-weight: 350;
   padding: 50px 0 0 0;
   margin: 0;
 }
 
-.wj_main-book h3 {
+.main-book h3 {
   font-size: 1.9rem;
   font-weight: 500;
   margin: 30px 0 30px 0;
   padding: 0;
 }
 
-.wj_main-book a {
+.main-book a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -41,9 +41,9 @@ body {}
 
 /* 메인 북 폼 */
 
-.wj_book fieldset {
+.book fieldset {
   background: #0180a3;
-  width: 61vw;
+  width: 1000px;
   border: none;
   border-radius: 3px;
   padding: 0;
@@ -51,7 +51,7 @@ body {}
   position: relative;
 }
 
-.wj_book-btn {
+.book-btn {
   display: block;
   width: 100px;
   height: 90px;
@@ -65,35 +65,35 @@ body {}
   font-size: 1.4rem;
 }
 
-.wj_book-btn:hover {
+.book-btn:hover {
   outline: 1px solid black;
 }
 
-.wj_book-flight {
+.book-flight {
   background-image: url('./images/booking-icon.png');
   background-position: 36px 12px;
 }
 
-.wj_book-hotel {
+.book-hotel {
   background-image: url('./images/booking-icon.png');
   background-position: 36px 200px;
 }
 
-.wj_book-rent {
+.book-rent {
   background-color: #0180a3;
   background-image: url('./images/booking-icon.png');
   background-position: 36px 133px;
   font-weight: 700;
 }
 
-.wj_book .wj_book-car {
+.book .book-car {
   width: 950px;
   position: absolute;
-  left: 120px;
+  left: 110px;
   top: 10px;
 }
 
-.wj_car-area-btn {
+.car-area-btn {
   border: none;
   background: #27748b;
   display: inline-block;
@@ -103,7 +103,7 @@ body {}
   color: white;
 }
 
-.wj_car-area-btn:nth-child(1) {
+.car-area-btn:nth-child(1) {
   margin-left: 30px;
   border-radius: 10px 0 0 10px;
   color: #215264;
@@ -111,11 +111,11 @@ body {}
   font-weight: 600;
 }
 
-.wj_car-area-btn:nth-child(2) {
+.car-area-btn:nth-child(2) {
   border-radius: 0 10px 10px 0;
 }
 
-.wj_book .wj_car-world {
+.book .car-world {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
@@ -127,72 +127,72 @@ body {}
   flex-wrap: wrap;
 }
 
-.wj_car-world ul {
+.car-world ul {
   list-style-type: none;
   padding: 0;
   width: 680px;
 }
 
-.wj_car-world input,
-.wj_car-world select {
+.car-world input,
+.car-world select {
   border-radius: 5px;
   padding-left: 5px;
 }
 
-.wj_car-world input {
+.car-world input {
   display: block;
   height: 30px;
   margin-top: 5px;
 }
 
-.wj_wcar-where input {
+.wcar-where input {
   width: 320px;
 }
 
-.wj_wcar-when input {
+.wcar-when input {
   width: 150px;
 }
 
-.wj_car-world .wj_wcar-member {
+.car-world .wcar-member {
   width: 130px;
   height: 50px;
   margin-top: 12px;
 }
 
-.wj_car-world select {
+.car-world select {
   height: 30px;
   margin-top: 5px;
   display: inline-block;
 }
 
-.wj_wcar-member select {
+.wcar-member select {
   width: 120px;
 }
 
-.wj_wcar-when select {
+.wcar-when select {
   width: 80px;
 }
 
-.wj_wcar-where,
-.wj_wcar-when {
+.wcar-where,
+.wcar-when {
   display: flex;
   justify-content: space-between;
 }
 
-.wj_dropoff-check {
+.dropoff-check {
   position: absolute;
   top: 12px;
   right: 170px;
   display: flex;
 }
 
-.wj_car-world .wj_dropoff-check input {
+.car-world .dropoff-check input {
   width: 15px;
   height: 15px;
   margin: 4px 2px 0;
 }
 
-.wj_wcar-when li {
+.wcar-when li {
   margin: 0;
   display: flex;
   flex-flow: row wrap;
@@ -201,12 +201,12 @@ body {}
 }
 
 
-.wj_wcar-when label {
+.wcar-when label {
   display: block;
   width: 200px;
 }
 
-.wj_car-world button[type="submit"] {
+.car-world button[type="submit"] {
   width: 120px;
   height: 30px;
   background: #a0e2f4;
@@ -217,100 +217,101 @@ body {}
 }
 
 /* 이벤트 */
-.wj_main-event,
-.wj_main-special {
+.main-event,
+.main-special {
   margin-bottom: 50px;
   position: relative;
 }
 
-.wj_main-event h2,
-.wj_main-special h2 {
+.main-event h2,
+.main-special h2 {
   font-size: 2.5rem;
   font-weight: 500;
 }
 
-.wj_event-list {
+.event-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  width: 1350px;
 }
 
-.wj_event-list a {
+.event-list a {
   background-image: url('./images/caption-arrow.png');
   background-repeat: no-repeat;
 }
 
-.wj_event-list a,
-.wj_special-list a {
+.event-list a,
+.special-list a {
   text-decoration: none;
   display: block;
   height: 290px;
   width: 230px;
 }
 
-.wj_event-title,
-.wj_event-detail,
-.wj_special-title,
-.wj_special-detail {
+.event-title,
+.event-detail,
+.special-title,
+.special-detail {
   display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.wj_event-title {
+.event-title {
   color: white;
   font-size: 1.5rem;
   font-weight: 500;
   padding: 230px 0 0 10px;
 }
 
-.wj_event-detail {
+.event-detail {
   color: #7ed0e0;
   font-size: 1.3rem;
   font-weight: 800;
   padding: 5px 0 0 10px;
 }
 
-.wj_event-list a:hover {
+.event-list a:hover {
   outline: 1px solid black;
 }
 
-.wj_event-list li:nth-child(1) a {
+.event-list li:nth-child(1) a {
   background-color: #434343;
   background-image: url('./images/event1.png');
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-.wj_event-list li:nth-child(2) a {
+.event-list li:nth-child(2) a {
   background-color: #434343;
   background-image: url('./images/event2.png');
   background-repeat: no-repeat;
 }
 
-.wj_event-list li:nth-child(3) a {
+.event-list li:nth-child(3) a {
   background-color: #434343;
   background-image: url('./images/event3.png');
   background-repeat: no-repeat;
 }
 
-.wj_event-list li:nth-child(4) a {
+.event-list li:nth-child(4) a {
   background-color: #434343;
   background-image: url('./images/event4.jpg');
   background-repeat: no-repeat;
 }
 
-.wj_event-list li:nth-child(5) a {
+.event-list li:nth-child(5) a {
   background-color: #434343;
   background-image: url('./images/event5.jpg');
   background-repeat: no-repeat;
 }
 
-.wj_event-all,
-.wj_special-all {
+.event-all,
+.special-all {
   color: #186686;
   font-size: 1.6rem;
   font-weight: 500;
@@ -320,25 +321,25 @@ body {}
   position: absolute;
 }
 
-.wj_event-all {
+.event-all {
   top: 5px;
   left: 180px;
 }
 
-.wj_event-all:hover {
+.event-all:hover {
   outline: 1px solid black;
 }
 
 
 /* 특가 항공권 */
-.wj_special-list {
+.special-list {
   margin: 0;
   padding: 0;
   list-style: none;
   width: 1250px;
 }
 
-.wj_special-list li {
+.special-list li {
   background-repeat: no-repeat;
   width: 229px;
   position: relative;
@@ -346,24 +347,24 @@ body {}
   float: left;
 }
 
-.wj_special-list li:hover {
+.special-list li:hover {
   outline: 1px solid black;
 }
 
-.wj_special-title {
+.special-title {
   color: white;
   font-size: 1.4rem;
   font-weight: 500;
   padding-bottom: 5px;
 }
 
-.wj_special-detail {
+.special-detail {
   color: #7ed0e0;
   font-size: 1.8rem;
   font-weight: 800;
 }
 
-.wj_special-overlay {
+.special-overlay {
   background: #000;
   opacity: 0.8;
   padding: 10px;
@@ -373,56 +374,56 @@ body {}
   left: 0;
 }
 
-.wj_special-list li:nth-child(1) {
+.special-list li:nth-child(1) {
   background-image: url('./images/special1.jpg');
   float: left;
 }
 
-.wj_special-list li:nth-child(2) {
+.special-list li:nth-child(2) {
   background-image: url('./images/special2.jpg');
 }
 
-.wj_special-list li:nth-child(3) {
+.special-list li:nth-child(3) {
   background-image: url('./images/special3.jpg');
 }
 
-.wj_special-list li:nth-child(4) {
+.special-list li:nth-child(4) {
   background-image: url('./images/special4.jpg');
   width: 465px;
   height: 143px;
   margin-bottom: 3px;
 }
 
-.wj_special-list li:nth-child(5) {
+.special-list li:nth-child(5) {
   background-image: url('./images/special5.jpg');
   height: 143px;
   width: 231.5px;
 }
 
-.wj_special-list li:nth-child(6) {
+.special-list li:nth-child(6) {
   background-image: url('./images/special6.jpg');
   height: 143px;
   width: 231.5px;
 }
 
-.wj_special-notice {
+.special-notice {
   font-size: 1.2rem;
   padding: 10px 0 50px 15px;
 }
 
-.wj_special-notice li {
+.special-notice li {
   padding: 3px 0;
 }
 
-.wj_special-notice li:nth-last-child(1) {
+.special-notice li:nth-last-child(1) {
   font-weight: 700;
 }
 
-.wj_special-all {
+.special-all {
   top: 5px;
   left: 150px;
 }
 
-.wj_special-all:hover {
+.special-all:hover {
   outline: 1px solid black;
 }

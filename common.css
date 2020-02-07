@@ -17,7 +17,7 @@ body * {
 }
 
 /* 숨김 콘텐츠 */
-.wj_a11y-hidden,
+.a11y-hidden,
 legend {
   width: 1px;
   height: 1px;
@@ -26,7 +26,7 @@ legend {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-.wj_clear-fix::after {
+.clear-fix::after {
   content: "";
   display: block;
   clear: both;
@@ -47,7 +47,7 @@ header li {
   list-style-type: none;
 }
 
-.wj_menu-top {
+.menu-top {
   display: flex;
   justify-content: flex-end;
   font-size: 1.1rem;
@@ -62,22 +62,22 @@ header span {
   padding: 0 4px;
 }
 
-.wj_menu-top a:hover {
+.menu-top a:hover {
   outline: white solid thin;
 }
 
-.wj_menu-lang,
-.wj_menu-member {
+.menu-lang,
+.menu-member {
   display: flex;
   padding: 7px 15px;
   margin: 0;
 }
 
-.wj_menu-lang {
+.menu-lang {
   margin-right: auto;
 }
 
-.wj_menu-member {
+.menu-member {
   letter-spacing: 2px;
   margin: 0 5px 0 0;
 }
@@ -110,79 +110,80 @@ h1 {
   margin: 0;
 }
 
-.wj_logo a {
+.logo a {
   position: absolute;
   top: 50px;
   left: 30px;
 }
 
-.wj_menu-bottom {
-  margin-left: 1000px;
+.menu-bottom {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 15px;
   position: relative;
 }
 
-.wj_menu-bottom li:hover {
+.menu-bottom li:hover {
   outline: black solid thin;
 }
 
-.wj_menu-main {
+.menu-main {
   display: inline-block;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
-.wj_menu-main:hover .wj_submenu {
+.menu-main:hover .submenu {
   display: flex;
 }
 
-.wj_menu-main a {
+.menu-main a {
   color: black;
   display: block;
   padding: 5px 5px 5px 35px;
 }
 
-.wj_menu-flight {
+.menu-flight {
   background-image: url('./images/nav-icon1.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-flight:hover {
+.menu-flight:hover {
   background-image: url('./images/hover-1.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-skypass {
+.menu-skypass {
   background-image: url('./images/nav-icon2.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-skypass:hover {
+.menu-skypass:hover {
   background-image: url('./images/hover-2.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-service {
+.menu-service {
   background-image: url('./images/nav-icon3.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-service:hover {
+.menu-service:hover {
   background-image: url('./images/hover-3.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-promotion {
+.menu-promotion {
   background-image: url('./images/nav-icon4.png');
   background-repeat: no-repeat;
 }
 
-.wj_menu-promotion:hover {
+.menu-promotion:hover {
   background-image: url('./images/hover-4.png');
   background-repeat: no-repeat;
 }
 
-.wj_submenu {
+.submenu {
   font-size: 1.4rem;
   background-color: #fff;
   display: flex;
@@ -195,25 +196,25 @@ h1 {
   display: none;
 }
 
-.wj_submenu a {
+.submenu a {
   padding: 5px;
 }
 
-.wj_submenu a:hover {
+.submenu a:hover {
   text-decoration: black underline;
 }
 
-.wj_subitem {
+.subitem {
   display: block;
   padding: 15px;
 }
 
-.wj_subitem span {
+.subitem span {
   color: #186686;
   font-weight: 700;
 }
 
-.wj_menu-close {
+.menu-close {
   border: none;
   background-color: #fff;
   height: 30px;
@@ -224,16 +225,16 @@ h1 {
 
 /* 푸터 */
 footer {
-  background: #314563;
+  background: #314f69;
   position: relative;
   padding-bottom: 50px;
 }
 
-.wj_footer-menu {
+.footer-menu {
   padding: 50px 0 30px 20%;
 }
 
-.wj_footer-menu ul {
+.footer-menu ul {
   float: left;
   padding: 0 40px 0 0;
   margin: 0;
@@ -241,35 +242,35 @@ footer {
   list-style: none;
 }
 
-.wj_footer-menu ul li {
+.footer-menu ul li {
   border-left: 1px solid white;
 }
 
-.wj_footer-menu ul li:nth-child(1) {
+.footer-menu ul li:nth-child(1) {
   font-size: 1.4rem;
   border: none;
 }
 
-.wj_footer-menu a {
+.footer-menu a {
   text-decoration: none;
   color: white;
   padding-left: 15px;
   font-size: 1.2rem;
 }
 
-.wj_address span,
-.wj_copyright {
+.address span,
+.copyright {
   font-style: normal;
   color: white;
   font-size: 1.1rem;
   padding-left: 20%;
 }
 
-.wj_sns {
+.sns {
   float: right;
   padding-right: 20%;
 }
 
-.wj_sns a {
+.sns a {
   padding-right: 5px;
 }

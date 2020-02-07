@@ -1,4 +1,4 @@
-/* 부킹 */
+/* booking */
 .main-book {
   height: 70vh;
   background: url('./images/main-bg.jpg') no-repeat;
@@ -197,7 +197,6 @@
   justify-content: space-between;
   width: 320px;
 }
-
 
 .wcar-when label {
   display: block;

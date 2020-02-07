@@ -477,19 +477,12 @@
       <form class="book" action="#" method="POST">
         <fieldset>
           <legend>예약 폼</legend>
-          <button class="book-btn book-flight" role="tab" id="tab-flight" aria-selected="true" tabindex="0"
-            aria-controls="tabpannel-flight">항공권</button>
-          <button class="book-btn book-hotel" role="tab" id="tab1-hotel" aria-selected="flase" tabindex="0"
-            aria-controls="tabpannel-hotel">호텔</button>
-          <button class="book-btn book-rent" role="tab" id="tab-rent" aria-selected="false" tabindex="0"
-            aria-controls="tabpannel-rent">렌터카</button>
-          <div class="book-car" role="tabpanel" id="tabpannel-rent" aria-labelledby="tab-rent">
-            <button class="car-area-btn" role="tab" id="tab-wcar" aria-selected="true" tabindex="0"
-              aria-controls="tabpannel-wcar">전세계
-            </button><button class="car-area-btn" role="tab" id="tab-jcar" aria-selected="false" tabindex="0"
-              aria-controls="tabpannel-jcar">
-              제주(한진)</button>
-            <div class="car-world" role="tabpanel" id="tabpannel-wcar" aria-labelledby="tab-rent">
+          <button class="book-btn book-flight" tabindex="0">항공권</button>
+          <button class="book-btn book-hotel" tabindex="0">호텔</button>
+          <button class="book-btn book-rent" tabindex="0">렌터카</button>
+          <div class="book-car">
+            <button class="car-area-btn">전세계</button><button class="car-area-btn">제주(한진)</button>
+            <div class="car-world">
               <ul class="wcar-where">
                 <li>
                   <label for="pickup-city">대여 도시</label>

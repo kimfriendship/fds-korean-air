@@ -34,33 +34,7 @@
   background: #186686;
 }
 
-/* 콘텐츠 */
-h2,
-h3 {
-  top: 0;
-  color: white;
-  font-size: 5.4em;
-  font-weight: 400;
-  margin: 0;
-  padding: 60px 0 0 160px;
-  letter-spacing: -0.5px;
-}
-
-h3 {
-  position: sticky;
-  padding-top: 120px;
-}
-
-.btn-link {
-  border: 1px solid #186686;
-  text-decoration: none;
-  color: #186686;
-}
-
-.section {
-  border-bottom: 5px solid #0f2b36;
-}
-
+/* 메인 스카이패스 */
 .s-skypass {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705) 25%,
       rgba(255, 255, 255, 0) 50%),
@@ -80,11 +54,8 @@ h3 {
   background-attachment: fixed;
 }
 
-.btn-link:hover {
-  background-color: #186686;
-  color: white;
-}
 
+/* 메인 스카이팀 */
 .s-skyteam {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
@@ -114,7 +85,6 @@ h3 {
   background: #186686;
   color: white;
 }
-
 
 .tr th:nth-child(1) {
   width: 40%;
@@ -152,6 +122,7 @@ h3 {
   background-position: center;
 }
 
+/* 메인 마일리지 */
 .s-mileage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(187, 36, 36, 0)),
     url("./images/skypass-bg4.jpg");
@@ -160,6 +131,7 @@ h3 {
   background-attachment: fixed;
 }
 
+/* 메인 제휴사 */
 .s-discount {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
@@ -180,6 +152,7 @@ h3 {
   margin: 0;
 }
 
+/* 메인 CMBS */
 .s-cmbs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705),
       rgba(255, 255, 255, 0)),
@@ -189,7 +162,52 @@ h3 {
   background-attachment: fixed;
 }
 
-/* 폰트 스타일 */
+/* 스타일 */
+
+h2,
+h3 {
+  top: 0;
+  color: white;
+  font-size: 5.4em;
+  font-weight: 400;
+  margin: 0;
+  padding: 60px 0 0 160px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  position: sticky;
+  padding-top: 120px;
+}
+
+
+h4 {
+  width: 100%;
+  margin: 0 0 50px 0;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  background-color: #fff;
+}
+
+h5 {
+  font-size: 2rem;
+  color: hsl(197, 70%, 31%);
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+}
+
+
+.section {
+  border-bottom: 5px solid #0f2b36;
+}
+
 .content .f-italic {
   font-style: italic;
   color: #186686;
@@ -231,31 +249,27 @@ section:nth-of-type(6) article:nth-of-type(1) {
   display: block;
 }
 
-h4 {
-  width: 100%;
-  margin: 0 0 50px 0;
-  font-size: 4rem;
-  font-weight: 300;
-  text-align: center;
-  background-color: #fff;
-}
-
-h5 {
-  font-size: 2rem;
-  color: hsl(197, 70%, 31%);
-  font-weight: 400;
-  margin: 20px 0;
-}
-
-h6 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 20px 0 0 0;
+.content img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
 .content-list {
   padding: 0 0 0 20px;
   margin: 5px 0;
+}
+
+.content .content-list ul li {
+  list-style-type: "-";
+}
+
+.content .content-list ul li ul li {
+  list-style-type: circle;
+}
+
+.content-list .content-star {
+  padding: 3px 0;
 }
 
 .content .content-star {
@@ -273,16 +287,9 @@ h6 {
   margin: 5px 100px 5px 0;
 }
 
-.link-pdf {
-  background: url('./images/icon_pdf.png') no-repeat;
-  background-position: right;
-  padding-right: 20px;
-}
-
-.content img {
-  width: 400px;
-  display: block;
-  margin: 0 auto;
+.content-link:hover {
+  outline: 1px solid black;
+  font-size: 1.6rem;
 }
 
 .btn-link {
@@ -291,21 +298,18 @@ h6 {
   padding: 10px 15px;
   border: 2px solid hsl(197, 70%, 31%);
   margin: 10px;
+  border: 1px solid #186686;
+  text-decoration: none;
+  color: #186686;
 }
 
-.content-link:hover {
-  outline: 1px solid black;
-  font-size: 1.6rem;
+.btn-link:hover {
+  background-color: #186686;
+  color: white;
 }
 
-.content .content-list ul li {
-  list-style-type: "-";
-}
-
-.content .content-list ul li ul li {
-  list-style-type: circle;
-}
-
-.content-list .content-star {
-  padding: 3px 0;
+.link-pdf {
+  background: url('./images/icon_pdf.png') no-repeat;
+  background-position: right;
+  padding-right: 20px;
 }

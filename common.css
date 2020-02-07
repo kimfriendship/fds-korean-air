@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  min-width: 1300px;
   position: relative;
   line-height: 2.3em;
   font-family: "Open sans", "Malgun Gothic", "맑은 고딕", Dotum, Gulim, Verdana;
@@ -265,9 +266,8 @@ footer {
 }
 
 .wj_sns {
-  position: absolute;
-  top: 260px;
-  right: 500px;
+  float: right;
+  padding-right: 20%;
 }
 
 .wj_sns a {

@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  min-width: 1300px;
+  width: 100%;
+  min-width: 1200px;
   position: relative;
   line-height: 2.3em;
   font-family: "Open sans", "Malgun Gothic", "맑은 고딕", Dotum, Gulim, Verdana;
@@ -268,7 +269,7 @@ footer {
 
 .sns {
   float: right;
-  padding-right: 20%;
+  padding: 7px 25% 0 0;
 }
 
 .sns a {
